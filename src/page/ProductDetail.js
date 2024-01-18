@@ -14,7 +14,7 @@ const ProductDetail = () => {
   //async와 await는 항상 같이 다닌다.
   const getProductDetail = async () => {
     //let url = `http://localhost:3004/products/${id}`;
-    let url = `https://my-json-server.typicode.com/<your-username>/<your-repo>/products/${id}`;
+    let url = `https://my-json-server.typicode.com/hyunju960429/shopping/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     setProduct(data);
