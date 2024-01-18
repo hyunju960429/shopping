@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul,
+li,
+ol {
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.nav-section img {
+  width: 200px;
+}
+.menu_list {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0 30px;
+}
+.menu_list ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-weight: 500;
+}
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  cursor: pointer;
+  gap: 20px;
+  align-items: center;
+}
+.input {
+  position: absolute;
+  right: 10vw;
+  border-bottom: 2px solid #333;
+}
+.input input {
+  border: none;
+  outline: none;
+  margin-left: 7px;
 }
 
-.App-link {
-  color: #61dafb;
+.productCard {
+  margin: 0 5px;
+}
+.productCard div {
+  height: 40px;
+}
+.productCard img {
+  width: 100%;
+  transition: 0.3s;
+}
+.productCard:hover img {
+  transform: scale(1.2);
+}
+.productCard .title {
+  font-weight: bold;
+}
+.productCard .imgW {
+  overflow: hidden;
+  height: auto;
+}
+.productCard .choice {
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-img img {
+  display: block;
+  margin-left: auto;
+}
+.product-desc {
+  padding-left: 10vw !important;
+  box-sizing: border-box;
+}
+
+.product-desc div {
+  margin-bottom: 20px;
+}
+.product-title {
+  padding-top: 20px;
+  font-weight: 700;
 }
